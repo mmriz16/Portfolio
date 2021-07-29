@@ -172,6 +172,10 @@ body {
   text-decoration: none;
 }
 
+.work-card-copy .a-case .work-cover {
+  border-radius: 15px;
+}
+
 .work-card-copy .a-case h3 {
   color: var(--white);
   font-size: 40px;
@@ -378,6 +382,10 @@ body {
 
   .work-card-copy .a-case {
     text-decoration: none;
+  }
+
+  .work-card-copy .a-case .work-cover {
+    border-radius: 10px;
   }
 
   .work-card-copy .a-case h3 {
