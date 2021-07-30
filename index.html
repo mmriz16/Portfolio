@@ -185,7 +185,8 @@
                                 </a>
                                 <div class="work-card-copy">
                                     <a href="" class="a-case">
-                                        <img src="assets/img/cnth-cover.png" class="mb-4 work-cover" alt="" style="width: 100%;">
+                                        <img src="assets/img/Light Mode.jpg" class="mb-4 work-cover" alt=""
+                                            style="width: 100%;">
                                         <h3>Shortcut For You!</h3>
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dignissimos
                                             nobis vero, dolor explicabo qui?</p>
@@ -208,7 +209,8 @@
                                 </a>
                                 <div class="work-card-copy">
                                     <a href="" class="a-case">
-                                        <img src="assets/img/cnth-cover.png" class="mb-4 work-cover" alt="" style="width: 100%;">
+                                        <img src="assets/img/Dark Mode-2.jpg" class="mb-4 work-cover" alt=""
+                                            style="width: 100%;">
                                         <h3>Lorem, ipsum dolor.</h3>
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dignissimos
                                             nobis vero, dolor explicabo qui?</p>
@@ -233,7 +235,8 @@
                                 </a>
                                 <div class="work-card-copy">
                                     <a href="" class="a-case">
-                                        <img src="assets/img/cnth-cover.png" class="mb-4 work-cover" alt="" style="width: 100%;">
+                                        <img src="assets/img/Dark Mode.jpg" class="mb-4 work-cover" alt=""
+                                            style="width: 100%;">
                                         <h3>Lorem, ipsum dolor.</h3>
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dignissimos
                                             nobis vero, dolor explicabo qui?</p>
@@ -256,7 +259,8 @@
                                 </a>
                                 <div class="work-card-copy">
                                     <a href="" class="a-case">
-                                        <img src="assets/img/cnth-cover.png" class="work-cover mb-4" alt="" style="width: 100%;">
+                                        <img src="assets/img/Light Mode-2.jpg" class="work-cover mb-4" alt=""
+                                            style="width: 100%;">
                                         <h3>Lorem, ipsum dolor.</h3>
                                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dignissimos
                                             nobis vero, dolor explicabo qui?</p>
@@ -414,7 +418,8 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="contact-bar-bottom-right col-lg-6 d-flex justify-content-between align-items-center">
+                        <div
+                            class="contact-bar-bottom-right col-lg-6 d-flex justify-content-between align-items-center">
                             <div class="contact-bar-bottom-left-social">
                                 <a href="https://dribbble.com/mmriz16" target="_blank" class="icon"><i
                                         class="fab fa-dribbble"></i></a>
@@ -480,6 +485,49 @@
         var x = window.matchMedia("(max-width: 1200px)")
         myFunction(x)
         x.addListener(myFunction)
+
+        $(document).bind("contextmenu", function (e) {
+            return false;
+        });
+
+        window.onload = function () {
+            document.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+            }, false);
+            document.addEventListener("keydown", function (e) {
+                //document.onkeydown = function(e) {
+                // "I" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                    disabledEvent(e);
+                }
+                // "J" key
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    disabledEvent(e);
+                }
+                // "S" key + macOS
+                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                    disabledEvent(e);
+                }
+                // "U" key
+                if (e.ctrlKey && e.keyCode == 85) {
+                    disabledEvent(e);
+                }
+                // "F12" key
+                if (event.keyCode == 123) {
+                    disabledEvent(e);
+                }
+            }, false);
+
+            function disabledEvent(e) {
+                if (e.stopPropagation) {
+                    e.stopPropagation();
+                } else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+                e.preventDefault();
+                return false;
+            }
+        }
     </script>
 </body>
 
