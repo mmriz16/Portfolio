@@ -19,6 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- End Link -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -40,10 +41,18 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- End Script -->
 </head>
 
 <body style="background-image: url(assets/img/bg.jpg); background-position: center;">
+    <!-- Back to Top -->
+    <div class="row justify-content-right">
+        <div class="col-lg-10">
+            <a class="gotopbtn" id="gotopbtn" href="#"><i class="fas fa-caret-up"></i></a>
+        </div>
+    </div>
+
     <!-- Navbar -->
     <div class="contact-bar-top">
         <section id="contact-bar">
@@ -88,14 +97,14 @@
         <div class="hero-container container">
             <div class="hero-row row d-flex align-items-center">
                 <div class="hero-left col-12 col-sm-6">
-                    <p class="p-small-header">Hey, nice to meet you!</p>
-                    <h1>I'm Rizky</h1>
-                    <p class="p-big">
+                    <p class="p-small-header"  data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">Hey, nice to meet you!</p>
+                    <h1  data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">I'm Rizky</h1>
+                    <p class="p-big"  data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                         Graphic Designer, UI Designer & Icon Designer on a mission to build products for others that
                         enable them to become more productive. Currently designing UI and motion graph at
                         <a href="https://dianglobaltech.co.id/" class="p-link" target="_blank">DGT</a>.
                     </p>
-                    <a href="about.html" class="a-big">Get to know me <i class="fas fa-chevron-right"
+                    <a  data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" href="about.html" class="a-big">Get to know me <i class="fas fa-chevron-right"
                             style="font-size: 20px; margin-left: 10px;"></i></a>
                 </div>
                 <div class="hero-right col-12 col-sm-6 d-flex justify-content-end">
@@ -111,18 +120,18 @@
             <div class="row">
                 <div class="col-12">
                     <div class="logo-header">
-                        <div class="p-small-header d-flex justify-content-center">
+                        <div class="p-small-header d-flex justify-content-center"  data-aos="fade-up" data-aos-delay="50">
                             some of the brands that I made
                         </div>
                     </div>
                 </div>
                 <div class="logo-col col-12 d-flex justify-content-center align-items-center">
-                    <div class="logo-wrapper">
+                    <div class="logo-wrapper"  data-aos="fade-up" data-aos-delay="0">
                         <a href="">
                             <img src="assets/img/Logo Redma Shortcuts.svg" alt="Redma Icon" id="logo-brand">
                         </a>
                     </div>
-                    <div class="logo-wrapper">
+                    <div class="logo-wrapper"  data-aos="fade-up" data-aos-delay="200">
                         <a href="">
                             <img src="assets/img/icon_1.svg" alt="Redma Icon" id="logo-brand">
                         </a>
@@ -142,12 +151,12 @@
                             <img src="assets/img/movie_1.svg" alt="Redma Movie" id="logo-brand">
                         </a>
                     </div> -->
-                    <div class="logo-wrapper">
+                    <div class="logo-wrapper" data-aos="fade-up" data-aos-delay="400">
                         <a href="">
                             <img src="assets/img/portfolio_1.svg" alt="Redma Portfolio" id="logo-brand">
                         </a>
                     </div>
-                    <div class="logo-wrapper">
+                    <div class="logo-wrapper"  data-aos="fade-up" data-aos-delay="600">
                         <a href="">
                             <img src="assets/img/storage_1.svg" alt="Redma Storage" id="logo-brand">
                         </a>
@@ -163,19 +172,19 @@
         <div class="work-container container">
             <div class="row">
                 <div class="col-12">
-                    <h2>What I recently worked on</h2>
+                    <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">What I recently worked on</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-11 col-xl-8">
-                    <div class="p-big">
+                    <div class="p-big"  data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         Read about the products I've got the opportunity to work on or check out my <a
                             href="https://dribbble.com/mmriz16" class="a-big" target="_blank">Dribbble</a> for more
                         work.
                     </div>
                 </div>
             </div>
-            <div class="work-row row">
+            <div class="work-row row"  data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">
                 <div class="col-12 col-lg-6">
                     <div class="case-preview-art-exchange-scanner">
                         <div class="animation">
@@ -225,7 +234,7 @@
                     </div>
                 </div>
             </div>
-            <div class="work-row row">
+            <div class="work-row row"  data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                 <div class="col-12 col-lg-6">
                     <div class="case-preview-art-exchange-scanner">
                         <div class="animation">
@@ -456,6 +465,7 @@
     </div>
 
     <script>
+        // Swiper
         function myFunction(x) {
             if (x.matches) {
                 var swiper = new Swiper(".mySwiper", {
@@ -490,6 +500,7 @@
             return false;
         });
 
+        // Disable Key
         window.onload = function () {
             document.addEventListener("contextmenu", function (e) {
                 e.preventDefault();
@@ -528,6 +539,22 @@
                 return false;
             }
         }
+
+        // Show and Hide Back To Top
+        var btn = $('#gotopbtn');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 500) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        // Animate On Scroll
+        AOS.init({
+            offset: 100,
+            duration: 1000
+        });
     </script>
 </body>
 
